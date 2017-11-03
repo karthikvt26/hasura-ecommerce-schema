@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "product_image"(id serial NOT NULL, product_id integer NOT NULL,
+      url text NOT NULL, sequence_no integer NOT NULL, PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: product_image
+  type: add_existing_table_or_view

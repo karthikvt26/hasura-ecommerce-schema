@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "order_address"(id serial NOT NULL, name text NOT NULL, phone_number
+      text NOT NULL, address_line_1 text NOT NULL, address_line_2 text NOT NULL, pin_code
+      text NOT NULL, city text NOT NULL, state text NOT NULL, PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: order_address
+  type: add_existing_table_or_view

@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "payment "(transaction_id integer NOT NULL, ref_num integer
+      NOT NULL, amount numeric NOT NULL, email text NOT NULL, created_at timestamptz
+      NOT NULL DEFAULT now(), billing_name text NOT NULL, billing_address text NOT
+      NULL, billing_city text NOT NULL, billing_state text NOT NULL, billing_postal_code
+      text NOT NULL, billing_country text NOT NULL, billing_phone text NOT NULL, billing_email
+      text NOT NULL, payment_method text NOT NULL, PRIMARY KEY ("ref_num") )
+  type: run_sql
+- args:
+    name: 'payment '
+  type: add_existing_table_or_view

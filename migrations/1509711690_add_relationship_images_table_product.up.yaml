@@ -1,0 +1,8 @@
+- args:
+    name: images
+    table: product
+    using:
+      foreign_key_constraint_on:
+        column: product_id
+        table: product_image
+  type: create_array_relationship

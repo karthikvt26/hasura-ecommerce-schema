@@ -1,0 +1,10 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - display_name
+      filter: {}
+    role: anonymous
+    table: category
+  type: create_select_permission

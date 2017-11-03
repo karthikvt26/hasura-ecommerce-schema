@@ -1,0 +1,23 @@
+- args:
+    permission:
+      columns:
+      - created_at
+      - billing_city
+      - billing_state
+      - billing_postal_code
+      - billing_country
+      - billing_phone
+      - billing_email
+      - payment_method
+      - billing_name
+      - email
+      - amount
+      - ref_num
+      - transaction_id
+      - billing_address
+      filter:
+        order:
+          customer_id: REQ_USER_ID
+    role: user
+    table: 'payment '
+  type: create_select_permission

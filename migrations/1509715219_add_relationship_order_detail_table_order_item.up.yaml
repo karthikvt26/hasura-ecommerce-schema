@@ -1,0 +1,6 @@
+- args:
+    name: order_detail
+    table: order_item
+    using:
+      foreign_key_constraint_on: order_detail_id
+  type: create_object_relationship

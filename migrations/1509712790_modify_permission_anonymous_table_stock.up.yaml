@@ -1,0 +1,10 @@
+- args:
+    permission:
+      columns:
+      - id
+      - product_id
+      - quantity
+      filter: {}
+    role: anonymous
+    table: stock
+  type: create_select_permission

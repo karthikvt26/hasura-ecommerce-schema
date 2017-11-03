@@ -1,0 +1,33 @@
+- args:
+    role: user
+    table: customer
+  type: drop_select_permission
+- args:
+    role: user
+    table: customer
+  type: drop_update_permission
+- args:
+    permission:
+      columns:
+      - hasura_id
+      - first_name
+      - last_name
+      - email
+      - phone_number
+      filter:
+        hasura_id: REQ_USER_ID
+    role: user
+    table: customer
+  type: create_select_permission
+- args:
+    permission:
+      columns:
+      - hasura_id
+      - first_name
+      - last_name
+      - email
+      - phone_number
+      filter: {}
+    role: user
+    table: customer
+  type: create_update_permission

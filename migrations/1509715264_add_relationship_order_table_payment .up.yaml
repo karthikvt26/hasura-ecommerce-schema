@@ -1,0 +1,8 @@
+- args:
+    name: order
+    table: 'payment '
+    using:
+      foreign_key_constraint_on:
+        column: payment_id
+        table: order
+  type: create_array_relationship

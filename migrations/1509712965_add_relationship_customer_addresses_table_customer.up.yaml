@@ -1,0 +1,8 @@
+- args:
+    name: customer_addresses
+    table: customer
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table: customer_address
+  type: create_array_relationship

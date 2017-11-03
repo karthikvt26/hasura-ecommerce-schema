@@ -1,0 +1,13 @@
+- args:
+    sql: CREATE TABLE "order"(id serial NOT NULL, payment_id integer NOT NULL, customer_id
+      integer NOT NULL, order_address_id integer NOT NULL, is_validated boolean NOT
+      NULL, validated_at timestamptz NOT NULL DEFAULT now(), is_packed boolean NOT
+      NULL DEFAULT false, packed_at timestamptz , is_shipped boolean NOT NULL DEFAULT
+      false, shipped_at timestamptz , is_delivered boolean NOT NULL DEFAULT false,
+      delivered_at timestamptz , is_cancelled boolean NOT NULL DEFAULT false, cancelled_at
+      timestamptz , cancel_reason text , cancel_status text , created_at timestamptz
+      NOT NULL DEFAULT now(), PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: order
+  type: add_existing_table_or_view

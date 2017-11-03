@@ -1,0 +1,26 @@
+- args:
+    permission:
+      columns:
+      - id
+      - category_id
+      - name
+      - description
+      - price
+      - url_name
+      filter: {}
+    role: anonymous
+    table: product
+  type: create_select_permission
+- args:
+    permission:
+      columns:
+      - id
+      - category_id
+      - name
+      - description
+      - price
+      - url_name
+      filter: {}
+    role: anonymous
+    table: product
+  type: create_update_permission

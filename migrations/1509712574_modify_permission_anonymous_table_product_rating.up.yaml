@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - id
+      - product_id
+      - customer_id
+      - comment
+      - rating
+      filter: {}
+    role: anonymous
+    table: product_rating
+  type: create_select_permission

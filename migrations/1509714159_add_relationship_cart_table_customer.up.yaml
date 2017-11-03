@@ -1,0 +1,8 @@
+- args:
+    name: cart
+    table: customer
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table: cart_item
+  type: create_array_relationship

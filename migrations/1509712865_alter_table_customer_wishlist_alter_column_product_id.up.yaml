@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "customer_wishlist" ALTER COLUMN "product_id" TYPE integer;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "customer_wishlist" ALTER COLUMN "product_id" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "customer_wishlist" ALTER COLUMN "product_id" SET NOT NULL;
+  type: run_sql

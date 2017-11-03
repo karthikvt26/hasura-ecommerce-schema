@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "cart_item" ADD FOREIGN KEY ("customer_id") REFERENCES "customer"
+      ("hasura_id")
+  type: run_sql

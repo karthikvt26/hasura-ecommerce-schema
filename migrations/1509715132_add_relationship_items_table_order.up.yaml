@@ -1,0 +1,8 @@
+- args:
+    name: items
+    table: order
+    using:
+      foreign_key_constraint_on:
+        column: order_detail_id
+        table: order_item
+  type: create_array_relationship

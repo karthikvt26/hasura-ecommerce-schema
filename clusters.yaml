@@ -1,0 +1,8 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: hasura
+  data: null
+  kubeContext: h34-deface93-stg
+  name: h34-deface93-stg
+  services: null

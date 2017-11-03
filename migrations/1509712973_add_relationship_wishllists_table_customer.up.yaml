@@ -1,0 +1,8 @@
+- args:
+    name: wishllists
+    table: customer
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table: customer_wishlist
+  type: create_array_relationship

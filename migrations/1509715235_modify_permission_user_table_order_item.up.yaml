@@ -1,0 +1,16 @@
+- args:
+    permission:
+      columns:
+      - product_id
+      - purchase_price
+      - product_name
+      - product_description
+      - quantity
+      - id
+      - order_detail_id
+      filter:
+        order_detail:
+          customer_id: REQ_USER_ID
+    role: user
+    table: order_item
+  type: create_select_permission

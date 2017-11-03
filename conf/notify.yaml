@@ -1,0 +1,40 @@
+# Configuration for Hasura Notify service
+# Set a provider as default and add the required credentials to use them
+email:
+  default: null
+  providers:
+    smtpConf:
+      smtpHostname: ""
+      smtpPassword:
+        secretKeyRef:
+          key: notify.smtp.password
+          name: hasura-secrets
+      smtpPort: 465
+      smtpUsername:
+        secretKeyRef:
+          key: notify.smtp.username
+          name: hasura-secrets
+    sparkPostConf:
+      sparkKey:
+        secretKeyRef:
+          key: notify.sparkpost.key
+          name: hasura-secrets
+sms:
+  default: null
+  providers:
+    msg91Conf:
+      msg91From: ""
+      msg91Key:
+        secretKeyRef:
+          key: notify.msg91.key
+          name: hasura-secrets
+    twilioConf:
+      accountSid:
+        secretKeyRef:
+          key: notify.twilio.accountsid
+          name: hasura-secrets
+      authToken:
+        secretKeyRef:
+          key: notify.twilio.authtoken
+          name: hasura-secrets
+      twilioFrom: ""

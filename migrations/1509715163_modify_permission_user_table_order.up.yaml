@@ -1,0 +1,25 @@
+- args:
+    permission:
+      columns:
+      - delivered_at
+      - customer_id
+      - payment_id
+      - order_address_id
+      - cancelled_at
+      - cancel_reason
+      - cancel_status
+      - id
+      - validated_at
+      - is_packed
+      - is_shipped
+      - is_delivered
+      - is_cancelled
+      - created_at
+      - is_validated
+      - packed_at
+      - shipped_at
+      filter:
+        customer_id: REQ_USER_ID
+    role: user
+    table: order
+  type: create_select_permission

@@ -1,0 +1,6 @@
+- args:
+    name: category
+    table: product
+    using:
+      foreign_key_constraint_on: category_id
+  type: create_object_relationship

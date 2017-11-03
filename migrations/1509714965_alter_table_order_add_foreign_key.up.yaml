@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "order" ADD FOREIGN KEY ("payment_id") REFERENCES "payment "
+      ("ref_num")
+  type: run_sql

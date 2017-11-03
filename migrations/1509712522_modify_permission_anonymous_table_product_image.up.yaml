@@ -1,0 +1,22 @@
+- args:
+    permission:
+      columns:
+      - id
+      - product_id
+      - url
+      - sequence_no
+      filter: {}
+    role: anonymous
+    table: product_image
+  type: create_select_permission
+- args:
+    permission:
+      columns:
+      - id
+      - product_id
+      - url
+      - sequence_no
+      filter: {}
+    role: anonymous
+    table: product_image
+  type: create_update_permission
