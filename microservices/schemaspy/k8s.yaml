@@ -22,6 +22,12 @@ items:
         - image: hasura/base-git-image:0.7
           imagePullPolicy: IfNotPresent
           name: schemaspy
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: postgres.password
+                  name: hasura-secrets
           ports:
           - containerPort: 8080
             protocol: TCP
