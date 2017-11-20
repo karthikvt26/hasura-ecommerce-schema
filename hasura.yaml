@@ -1,5 +1,6 @@
 description: Basic schema for e-commerce website
 keywords: base, getting-started
+media: {}
 name: ecommerce-schema
 platformVersion: v0.15.3
 repoUrl: https://github.com/coco98/hasura-ecommerce-schema
