@@ -69,3 +69,14 @@ notify:
     enableWebsockets: true
     locationDirectives: ""
     restrictToRoles: null
+
+schemaspy:
+  /:
+    corsPolicy: allow_all
+    upstreamService:
+      name: schemaspy
+      namespace: '{{ cluster.metadata.namespaces.user }}'
+    upstreamServicePath: /
+    upstreamServicePort: 80
+
+

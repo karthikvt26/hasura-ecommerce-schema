@@ -14,3 +14,9 @@ remotes:
     #     container-name:
     #       path: services/app
     #       dockerfile: services/app/Dockerfile
+
+    '{{ cluster.metadata.namespaces.user }}.schemaspy':
+      schemaspy:
+        dockerfile: microservices/schemaspy/Dockerfile
+        path: microservices/schemaspy
+
